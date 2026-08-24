@@ -1,7 +1,7 @@
 ---
 layout: research_brief
 title: "AI Research Brief · 2026-08-24"
-date: 2026-08-24 16:30:00 +0800
+date: 2026-08-24 08:00:00 +0800
 description: "本期关注混合音乐生成中的接口偏移、长音频高效解码，以及 continuous-latent LM、稀疏注意力和结构化 flow source。"
 ---
 
