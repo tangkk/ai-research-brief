@@ -1,0 +1,29 @@
+---
+layout: null
+---
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ site.description }}">
+  <title>AI Research Brief</title>
+  <style>
+    :root{--fg:#111827;--muted:#667085;--line:#e5e7eb;--link:#155eef;--soft:#f8fafc}*{box-sizing:border-box}body{margin:0;color:var(--fg);background:#fff;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"PingFang SC","Microsoft YaHei",sans-serif;font-size:16px;line-height:1.7}a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}.page{max-width:900px;margin:0 auto;padding:32px 18px 60px}.hero{padding-bottom:25px;border-bottom:1px solid var(--line);margin-bottom:25px}.eyebrow{margin:0 0 7px;color:var(--muted);font-size:12px;letter-spacing:.09em;text-transform:uppercase}h1{margin:0;font-size:37px;line-height:1.15;letter-spacing:-.025em}.subtitle{margin:12px 0 0;max-width:760px;color:var(--muted);font-size:15px}.nav{display:flex;gap:16px;flex-wrap:wrap;font-size:14px;margin-bottom:28px}.posts{list-style:none;margin:0;padding:0;display:grid;gap:12px}.post{padding:18px 19px;border:1px solid var(--line);border-radius:13px;background:#fff}.post-date{display:block;color:var(--muted);font-size:13px;margin-bottom:4px}.post-title{display:block;font-weight:650;font-size:19px}.post-summary{margin:6px 0 0;color:var(--muted);font-size:14px}.empty{color:var(--muted);padding:18px 0}.footer{margin-top:40px;padding-top:18px;border-top:1px solid var(--line);color:var(--muted);font-size:13px}@media(max-width:640px){.page{padding:20px 14px 42px}h1{font-size:30px}}
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="hero"><p class="eyebrow">tangkk · weekly research notes</p><h1>AI Research Brief</h1><p class="subtitle">前沿 AI、Deep Learning、LLM 与音乐/音频生成研究精选。两条方向同等权重，只保留真正值得读的论文、报告与技术分析。</p></header>
+    <nav class="nav"><a href="https://tangkk.github.io/">← Home</a><a href="https://github.com/tangkk/ai-research-brief">GitHub</a></nav>
+    <section><ul class="posts">
+      {% for post in site.posts %}
+      <li class="post"><span class="post-date">{{ post.date | date: "%Y-%m-%d" }}</span><a class="post-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>{% if post.description %}<p class="post-summary">{{ post.description }}</p>{% endif %}</li>
+      {% else %}
+      <li class="empty">第一期简报将在下次周五任务运行后出现在这里。</li>
+      {% endfor %}
+    </ul></section>
+    <footer class="footer">AI Research Brief · 每周五更新 · 仅文字版</footer>
+  </main>
+</body>
+</html>

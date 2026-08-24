@@ -1,0 +1,9 @@
+title: AI Research Brief
+description: 每周精选前沿 AI、Deep Learning、LLM 与音乐音频生成研究。
+url: "https://tangkk.github.io"
+baseurl: "/ai-research-brief"
+timezone: Asia/Shanghai
+markdown: kramdown
+permalink: /:year/:month/:day/
+exclude:
+  - README.md

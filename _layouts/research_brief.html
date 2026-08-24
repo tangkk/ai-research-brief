@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ page.description | default: site.description }}">
+  <title>{{ page.title }} · AI Research Brief</title>
+  <style>
+    :root{--fg:#111827;--muted:#667085;--line:#e5e7eb;--link:#155eef;--soft:#f8fafc;--code:#f3f4f6}*{box-sizing:border-box}body{margin:0;color:var(--fg);background:#fff;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"PingFang SC","Microsoft YaHei",sans-serif;font-size:17px;line-height:1.78}a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}.page{max-width:860px;margin:0 auto;padding:30px 18px 64px}.nav{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:14px;margin-bottom:28px}.header{padding-bottom:22px;border-bottom:1px solid var(--line);margin-bottom:26px}.date{margin:0 0 6px;color:var(--muted);font-size:13px}h1{margin:0;font-size:34px;line-height:1.25;letter-spacing:-.02em}h2{margin-top:2em;padding-top:.3em;border-top:1px solid var(--line);font-size:24px}h3{margin-top:1.6em;font-size:20px}p{margin:.9em 0}ul,ol{padding-left:1.4em}li{margin:.45em 0}blockquote{margin:1.2em 0;padding:.35em 1em;border-left:4px solid #c7d7fe;background:var(--soft);color:#344054}code{padding:.12em .35em;border-radius:5px;background:var(--code);font-size:.9em}pre{overflow:auto;padding:14px;background:var(--code);border-radius:10px}pre code{padding:0}.footer{margin-top:44px;padding-top:18px;border-top:1px solid var(--line);color:var(--muted);font-size:13px}@media(max-width:640px){.page{padding:20px 14px 46px}h1{font-size:29px}}
+  </style>
+</head>
+<body>
+  <main class="page">
+    <nav class="nav"><a href="{{ '/' | relative_url }}">← 全部简报</a><a href="https://github.com/tangkk/ai-research-brief">GitHub</a></nav>
+    <header class="header"><p class="date">{{ page.date | date: "%Y-%m-%d" }}</p><h1>{{ page.title }}</h1></header>
+    <article>{{ content }}</article>
+    <footer class="footer">AI Research Brief · 本文为中文文字版研究精选</footer>
+  </main>
+</body>
+</html>
